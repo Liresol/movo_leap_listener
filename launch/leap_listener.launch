@@ -1,0 +1,4 @@
+<launch>
+    <arg name="robot_name" default="j2n7s300"/>
+    <node pkg="movo_leap_listener" type="run_listener.py" name="movo_controller" args="$(arg robot_name)" output="screen" />
+</launch>
